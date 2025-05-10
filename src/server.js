@@ -25,10 +25,6 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('/', (req, res, next) => {
-  res.send("Hello from the server!");
-}
-);
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
